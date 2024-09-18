@@ -15,6 +15,11 @@ import marvel from "../../Assets/Projects/marvel.png";
 import color from "../../Assets/Projects/color.jpg";
 import Health from "../../Assets/Projects/SH.jpg";
 import webService from "../../Assets/Projects/dotnet.png";
+import nex from "../../Assets/Projects/nex.png";
+import JP from "../../Assets/Projects/jpmc.jpeg";
+import spotify from "../../Assets/Projects/spotify.png";
+import chat from "../../Assets/Projects/chat.png";
+
 
 function Projects() {
   return (
@@ -28,6 +33,47 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chat}
+              isBlog={false}
+              title="Chatter Flow"
+              description="
+              ChatterFlow is a real-time chat application built using Spring Boot and WebSockets"
+              ghLink="https://github.com/omar3anan/ChatterFlow"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col><Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={spotify}
+              isBlog={false}
+              title="Spotify Integration"
+              description="
+              Using Spotify Developers API"
+              ghLink="https://github.com/omar3anan/Spotify-Integration"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col><Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={JP}
+              isBlog={false}
+              title="JPMC Rewards Converter"
+              description="
+              Completed a simulation focused on the process of completing an engineering ticket for a system in the credit-card rewards department of JPMorgan Chase & Co."
+              ghLink="https://github.com/omar3anan/rewards-converter"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col><Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nex}
+              isBlog={false}
+              title="Nexusphere"
+              description="
+              Nexusphere is a cutting-edge, cloud-native social media platform built on a robust foundation of Spring Boot and Spring Security, backed by the efficiency of MySQL. Designed to foster seamless connections and dynamic interactions, Nexusphere empowers users to share experiences, ideas, and content effortlessly. With a strong emphasis on security, privacy, and performance, our platform delivers a secure and engaging environment for users to build communities and cultivate relationships"
+              ghLink="https://github.com/omar3anan/Nexusphere"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dstny}

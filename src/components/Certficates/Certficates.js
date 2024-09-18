@@ -21,6 +21,8 @@ import kaggle from "../../Assets/Certificates/Kaggle- intro to Machine Learning-
 import postqres from "../../Assets/Certificates/SQL.png";
 import jwt from "../../Assets/Certificates/jwt.png";
 import secuirty from "../../Assets/Certificates/Spring Secuirty.png";
+import JP from "../../Assets/Certificates/JP.png";
+import Google from "../../Assets/Certificates/google.png";
 
 function Certficates() {
   return (
@@ -35,6 +37,24 @@ function Certficates() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
+            <CertficateCard
+              imgPath={JP}
+              isBlog={false}
+              title="Software Enigneering Lite Job Simulation"
+              description="Completed a simulation focused on the process of completing an engineering ticket for a system in the credit-card rewards department of JPMorgan Chase & Co."
+              ghLink="https://drive.google.com/file/d/1CF7D2gHTm5wIuO6Z7NC6RY0qGGOD1maQ/view?usp=sharing"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col>{" "}<Col md={4} className="project-card">
+            <CertficateCard
+              imgPath={Google}
+              isBlog={false}
+              title=" Google Cloud Training Online"
+              description="Building Scalable Java Microservices with Spring Boot and Spring CloudBuilding Scalable Java Microservices with Spring Boot and Spring Cloud"
+              ghLink="https://drive.google.com/file/d/1e4vpx4yFZGeHNTp9ynSL940bLwHM1dxV/view?usp=sharing"
+              // demoLink="https://chatify-49.web.app/"
+            />
+          </Col>{" "}<Col md={4} className="project-card">
             <CertficateCard
               imgPath={secuirty}
               isBlog={false}
